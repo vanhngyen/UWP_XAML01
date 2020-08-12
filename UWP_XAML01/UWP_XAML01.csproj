@@ -125,6 +125,10 @@
     <Compile Include="Gird.xaml.cs">
       <DependentUpon>Gird.xaml</DependentUpon>
     </Compile>
+    <Compile Include="models\Book.cs" />
+    <Compile Include="RelativePanel.xaml.cs">
+      <DependentUpon>RelativePanel.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ScrollViewer.xaml.cs">
       <DependentUpon>ScrollViewer.xaml</DependentUpon>
     </Compile>
@@ -145,6 +149,19 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\1.png" />
+    <Content Include="Assets\10.png" />
+    <Content Include="Assets\11.png" />
+    <Content Include="Assets\12.png" />
+    <Content Include="Assets\13.png" />
+    <Content Include="Assets\2.png" />
+    <Content Include="Assets\3.png" />
+    <Content Include="Assets\4.png" />
+    <Content Include="Assets\5.png" />
+    <Content Include="Assets\6.png" />
+    <Content Include="Assets\7.png" />
+    <Content Include="Assets\8.png" />
+    <Content Include="Assets\9.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -164,6 +181,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Gird.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="RelativePanel.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

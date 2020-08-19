@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "demoOpenWeathermap", "demoO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyWeatherApplication", "MyWeatherApplication\MyWeatherApplication.csproj", "{B8CB3CA4-C440-4C74-A59B-474024D96F15}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherAppDemo", "WeatherAppDemo\WeatherAppDemo.csproj", "{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|ARM = Debug|ARM
@@ -171,6 +173,30 @@ Global
 		{B8CB3CA4-C440-4C74-A59B-474024D96F15}.Release|x86.ActiveCfg = Release|x86
 		{B8CB3CA4-C440-4C74-A59B-474024D96F15}.Release|x86.Build.0 = Release|x86
 		{B8CB3CA4-C440-4C74-A59B-474024D96F15}.Release|x86.Deploy.0 = Release|x86
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|ARM.ActiveCfg = Debug|ARM
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|ARM.Build.0 = Debug|ARM
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|ARM.Deploy.0 = Debug|ARM
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|ARM64.Build.0 = Debug|ARM64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|x64.ActiveCfg = Debug|x64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|x64.Build.0 = Debug|x64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|x64.Deploy.0 = Debug|x64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|x86.ActiveCfg = Debug|x86
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|x86.Build.0 = Debug|x86
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Debug|x86.Deploy.0 = Debug|x86
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|ARM.ActiveCfg = Release|ARM
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|ARM.Build.0 = Release|ARM
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|ARM.Deploy.0 = Release|ARM
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|ARM64.ActiveCfg = Release|ARM64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|ARM64.Build.0 = Release|ARM64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|ARM64.Deploy.0 = Release|ARM64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|x64.ActiveCfg = Release|x64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|x64.Build.0 = Release|x64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|x64.Deploy.0 = Release|x64
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|x86.ActiveCfg = Release|x86
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|x86.Build.0 = Release|x86
+		{64745C84-3AFC-4BB6-95D6-0996FCC61CBF}.Release|x86.Deploy.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

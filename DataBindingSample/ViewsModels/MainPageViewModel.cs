@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataBindingSample.ViewsModels
 {
-    class MainPageViewModel
+    public class MainPageViewModel
     {
         public MainPageViewModel()
         {

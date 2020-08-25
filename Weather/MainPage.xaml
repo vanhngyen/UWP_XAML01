@@ -67,6 +67,41 @@
                         RelativePanel.AlignBottomWithPanel="true"
                         Text="1234"/>
 
-        </RelativePanel>    
+        </RelativePanel>
+        <ScrollViewer Grid.Row="1" Padding="10,0,10,10" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
+            <GridView ItemsSource="{x:Bind WeatherEachHours}">
+                <GridView.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <ItemsWrapGrid MaximumRowsOrColumns="1" Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </GridView.ItemsPanel>
+                <GridView.ItemTemplate>
+                    <DataTemplate x:DataType="data:WeatherJSON">
+                        <StackPanel Width="45" HorizontalAlignment="Stretch">
+                            <TextBlock HorizontalAlignment="Center" FontSize="11" Text="{x:Bind DateTime}"/>
+                            <Image Width="30" Height="30" Margin="0,4,0,12" HorizontalAlignment="Center" Source="{x:Bind WeatherIcon}"/>
+                            <TextBlock HorizontalAlignment="Center" FontFamily="Segoe MDL2 Asset" FontSize="13" Text="{x:Bind Temperature.Value}"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </GridView.ItemTemplate>
+            </GridView>
+        </ScrollViewer>
+        <GridView Grid.Row="2" Margin="10,0,10,0" Padding="10" ItemsSource="{x:Bind WeatherEachDays}">
+            <GridView.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <ItemsWrapGrid MaximumRowsOrColumns="1" Orientation="Horizontal"/>
+                </ItemsPanelTemplate>
+            </GridView.ItemsPanel>
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="data:DailyForecast">
+                    <RelativePanel Width="320">
+                        <TextBlock Text="{x:Bind Date}"/>
+                        <Image Name="ImageWeather" Width="30" Height="30" RelativePanel.AlignHorizontalCenterWithPanel="True" RelativePanel.AlignVerticalCenterWithPanel="True" Source="{x:Bind Day.Icon}"/>
+                        <TextBlock Margin="38,0,0,0" RelativePanel.RightOf="ImageWeather" Text="{x:Bind Temperature.Maximum.Value}"/>
+                        <TextBlock Margin="76,0,0,0" FontSize="13" Foreground="Brown" RelativePanel.RightOf="ImageWeather" Text="{x:Bind Temperature.Minimum.Value}"/>
+                    </RelativePanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
     </Grid>
 </Page>
